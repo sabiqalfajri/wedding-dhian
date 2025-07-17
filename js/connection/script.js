@@ -6,7 +6,7 @@ import {
     onSnapshot,
     query,
     orderBy
- } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+ } from "firebase/firestore";
 
 
 function capitalizeWord(str) {
@@ -14,6 +14,7 @@ function capitalizeWord(str) {
     return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
+export function initCommentSection() {
 const form = document.getElementById('commentForm');
 const commentList = document.getElementById('commentList');
 const template = document.getElementById('template');
@@ -212,4 +213,4 @@ onSnapshot(q, (snapshot) => {
     document.getElementById('totalCount').textContent = `${totalComment} Comments`;
 });
 
-
+}
