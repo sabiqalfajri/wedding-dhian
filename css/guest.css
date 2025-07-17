@@ -129,6 +129,8 @@ html[data-bs-theme="dark"] .bg-white-black {
 }
 
 .parallax {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
