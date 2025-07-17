@@ -368,9 +368,9 @@ export const guest = (() => {
                 aud.load();
                 lib.load({ confetti: data.is_confetti_animation });
 
-                // comment.show()
-                //     .then(() => progress.complete('comment'))
-                //     .catch(() => progress.invalid('comment'));
+                comment.show()
+                    .then(() => progress.complete('comment'))
+                    .catch(() => progress.invalid('comment'));
 
             }).catch(() => progress.invalid('config'));
 
@@ -398,7 +398,7 @@ export const guest = (() => {
         return {
             util,
             theme,
-            comment,
+            // comment,
             guest: {
                 open,
                 modal,
