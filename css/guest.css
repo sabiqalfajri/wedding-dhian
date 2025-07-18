@@ -131,8 +131,7 @@ html[data-bs-theme="dark"] .bg-white-black {
 .parallax-wrapper {
     position: relative;
     width: 100%;
-    overflow-y: auto;
-    height: auto;
+    overflow: hidden;
 }
 
 .parallax {
@@ -143,6 +142,7 @@ html[data-bs-theme="dark"] .bg-white-black {
         linear-gradient(rgba(255,255,255,0.6)),
         url('/assets/images/couple2.jpg'); */
     background-image: url('/assets/images/couple2.jpg'); 
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,9 +235,9 @@ html[data-bs-theme="dark"] .bg-white-black {
         background-attachment: scroll;
     } */
 
-    /* .parallax {
+    .parallax {
         background-attachment: scroll !important;
-    } */
+    }
 }
 
 @media screen and (max-width: 576px) {
