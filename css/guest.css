@@ -128,6 +128,35 @@ html[data-bs-theme="dark"] .bg-white-black {
     cursor: pointer;
 }
 
+.parallax-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: 
+        linear-gradient(rgba(255,255,255,0.6)),
+        url('/assets/images/couple2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.parallax-content {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 /* .parallax {
     width: 100%;
     height: 100%;
@@ -163,6 +192,7 @@ html[data-bs-theme="dark"] .bg-white-black {
     z-index: -1;
 } */
 
+
 .parallax-section {
   position: relative;
   background-image: url("/gambar/backgorund-slide2.webp");
@@ -170,13 +200,13 @@ html[data-bs-theme="dark"] .bg-white-black {
   background-size: cover;
   background-position: 10% 10%;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   transition: transform 0.2s ease-out;
   overflow: hidden;
 }
 
-.parallax-wrapper {
+/* .parallax-wrapper {
     position: relative;
 }
 
@@ -203,7 +233,7 @@ html[data-bs-theme="dark"] .bg-white-black {
     height: auto;
     min-height: 200vh;
     z-index: 1;
-}
+} */
 
 @media screen and (max-width: 992px) {
     .width-loading {
