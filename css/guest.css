@@ -139,9 +139,10 @@ html[data-bs-theme="dark"] .bg-white-black {
     position: fixed;
     top: 0;
     left: 0;
-    background: 
+    /* background: 
         linear-gradient(rgba(255,255,255,0.6)),
-        url('/assets/images/couple2.jpg');
+        url('/assets/images/couple2.jpg'); */
+    background-image: url('/assets/images/couple2.jpg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
