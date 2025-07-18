@@ -131,7 +131,8 @@ html[data-bs-theme="dark"] .bg-white-black {
 .parallax-wrapper {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow-y: auto;
+    height: auto;
 }
 
 .parallax {
@@ -141,7 +142,6 @@ html[data-bs-theme="dark"] .bg-white-black {
     background: 
         linear-gradient(rgba(255,255,255,0.6)),
         url('/assets/images/couple2.jpg');
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,10 +151,9 @@ html[data-bs-theme="dark"] .bg-white-black {
 }
 
 .parallax-content {
-    position: sticky;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 1;
+    min-height: 100vh;
 }
 
 /* .parallax {
@@ -235,9 +234,9 @@ html[data-bs-theme="dark"] .bg-white-black {
         background-attachment: scroll;
     } */
 
-    .parallax {
+    /* .parallax {
         background-attachment: scroll !important;
-    }
+    } */
 }
 
 @media screen and (max-width: 576px) {
