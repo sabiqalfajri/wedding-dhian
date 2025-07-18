@@ -163,16 +163,46 @@ html[data-bs-theme="dark"] .bg-white-black {
     z-index: -1;
 } */
 
-.parallax-section {
+/* .parallax-section {
+  position: relative;
+  background-image: url("/gambar/backgorund-slide2.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 10% 10%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  transition: transform 0.2s ease-out;
+  overflow: hidden;
+} */
+
+.parallax-wrapper {
     position: relative;
-    background-image: url('/assets/images/couple2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vw;
 }
 
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/gambar/backgorund-slide2.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.2s ease-out;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.parallax-content {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 1;
+}
 
 @media screen and (max-width: 992px) {
     .width-loading {
@@ -180,11 +210,15 @@ html[data-bs-theme="dark"] .bg-white-black {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     /* .parallax {
         object-fit: contain;
         background-attachment: scroll;
     } */
+
+    /* .parallax-section {
+    background-attachment: scroll;
+  } */
 }
 
 @media screen and (max-width: 576px) {
