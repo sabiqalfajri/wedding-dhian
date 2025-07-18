@@ -145,7 +145,7 @@ html[data-bs-theme="dark"] .bg-white-black {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: -1;
 }
