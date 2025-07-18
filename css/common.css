@@ -123,6 +123,14 @@ html[data-bs-theme="light"] .bg-overlay-auto {
     --bs-gradient: none;
 }
 
+.btn-transparentt {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
 .hover-area {
     display: none;
     cursor: pointer;

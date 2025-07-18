@@ -3,9 +3,9 @@ import { util } from '../../common/util.js';
 import { cache } from '../../connection/cache.js';
 
 export const audio = (() => {
-
-    const statePlay = '<i class="fa-solid fa-circle-pause spin-button"></i>';
-    const statePause = '<i class="fa-solid fa-circle-play"></i>';
+    
+    const statePlay = '<i class="fa-solid fa-microphone-lines fa-2x spin-button"></i>';
+    const statePause = '<i class="fa-solid fa-microphone-lines-slash fa-2x"></i>';
 
     /**
      * @param {boolean} [playOnOpen=true]
