@@ -304,6 +304,8 @@ export const guest = (() => {
         // wait until welcome screen is show.
         await util.changeOpacity(document.getElementById('welcome'), true);
 
+        document.querySelector('#welcome .fade-up').classList.add('show');
+
         // remove loading screen and show welcome screen.
         await util.changeOpacity(document.getElementById('loading'), false).then((el) => el.remove());
     };
