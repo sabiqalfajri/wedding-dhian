@@ -131,7 +131,7 @@ html[data-bs-theme="dark"] .bg-white-black {
 .parallax-wrapper {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .parallax {
